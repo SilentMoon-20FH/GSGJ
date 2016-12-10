@@ -1,0 +1,5 @@
+1.修改了数据库中的 venue 表：新增 venue_addr （地址）和 venue_sumarea（可预约总数，同时也是区域号） 
+2. 修改了数据库中的 reserve 表：新增 reserve_area 列（用来指定所预约的区域号）
+3.修改了 tables 包中的 VenueTable 和 ReserveTable （添加数据库的新增内容）
+4.修改了 managers 包中的 VenueManager 和 ReserveManager （添加数据库的新增内容的读写操作）
+5.新增了 LoginServlet （在 servlets 包中），可能会有错，可以尝试删去 WebRoot ->  WEB-INF -> web.xml 中有注释提示的那一行
